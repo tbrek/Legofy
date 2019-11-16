@@ -83,8 +83,13 @@ LEGOS = {
         '001': [0xf4, 0xf4, 0xf4],
         '026': [0x02, 0x02, 0x02]
         },
-    }
 
+    'greyscale': {
+        '001': [0xf4, 0xf4, 0xf4],
+        '131': [0x8d, 0x94, 0x96],
+        '199': [0x4d, 0x5e, 0x57]
+        },
+    }
 
 def extend_palette(palette, colors=256, rgb=3):
     """Extend palette colors to 256 rgb sets."""

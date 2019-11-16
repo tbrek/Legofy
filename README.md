@@ -41,14 +41,14 @@ Usage: legofy [OPTIONS] IMAGE [OUTPUT]
 Options:
   --size INTEGER                  Number of bricks the longest side of the legofied image should have.
   --dither / --no-dither          Use dither algorithm to spread the color approximation error.
-  --palette [all|effects|mono|solid|transparent]
+  --palette [all|effects|mono|solid|transparent|greyscale]
                                   Palette to use based on real Lego colors.
   --help                          Show this message and exit.
 ```
 
 #### Palette
-There are 3 palettes: solid (33 colors), transparent (14 colors) and effects (4 colors).
-You can use one of them or all the 3.
+There are 5 palettes: solid (33 colors), transparent (14 colors), effects (4 colors), mono (2 colors) and greyscale (3 colors).
+You can use one of them or all the 5.
 ```shell
 $ legofy --palette solid image.jpg
 $ legofy --palette transparent image.jpg

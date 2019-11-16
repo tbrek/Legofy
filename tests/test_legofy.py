@@ -58,6 +58,7 @@ class Create(unittest.TestCase):
         legofy.main(FLOWER_PATH, output_path=out, palette_mode='effects')
         legofy.main(FLOWER_PATH, output_path=out, palette_mode='mono')
         legofy.main(FLOWER_PATH, output_path=out, palette_mode='all')
+        legofy.main(FLOWER_PATH, output_path=out, palltte_mode='greyscale')
         self.assertTrue(os.path.getsize(out) > 0)
 
     def test_bricks_parameter(self):
